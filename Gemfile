@@ -17,6 +17,10 @@ gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
@@ -33,7 +37,6 @@ group :production do
 end
 
 group :test do
-  gem 'capybara', '>= 2.15'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
 end
